@@ -4,16 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Delta Air</title>
+    <!-- 스와이퍼 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="css/my_swiper.css" />
+    <script src="https://kit.fontawesome.com/fb27592f06.js" crossorigin="anonymous"></script>
+
+    <!-- 파비콘 (셋중 한개만 선택 가능) -->
+    <link rel="icon" href="img/img/favicon.ico" />
+    <link rel="icon" type="image/img" href="img/img/favicon.png" />
+    <link rel="icon" href="img/svg+xml" href="img/img/favicon.svg" />
+
     <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="css/my_swiper.css" />
-    <script src="https://kit.fontawesome.com/fb27592f06.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header id="header">
+    <div id="mNav">
+      <button><i class="fa-solid fa-bars"></i></button>
+      <nav>
+        <ul>
+          <li><a href="#">예약</a></li>
+          <li><a href="#">체크인</a></li>
+          <li><a href="#">나의항공</a></li>
+          <li><a href="#">항공편</a></li>
+          <li><a href="#">여행정보</a></li>
+          <li><a href="#">마일즈</a></li>
+          <li><a href="#">도움말</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">회원가입</a></li>
+          <li class="login"><a href="#">로그인</a></li>
+          <li>
+            <a href="#"><i class="fa-regular fa-bell"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- //mobile nav -->
+
+    <header id="header" class="active">
       <div class="container header_inner">
         <div class="logo">
           <a href="#">
@@ -249,6 +284,7 @@
             </div>
             <div class="bottombox_text">
               <h4>플라이 델타 앱 다운로드</h4>
+              <div class="line"></div>
               <p>
                 목적지에 도착하실 때 상쾌한 기분이 드실 수 있도록 고급 객실 중 한 곳에서 몸을 쭉 펴고 좋아하는 음식과
                 음료로 휴식을 취하고 다양한 무료 엔터테인먼트를 즐겨 보세요.
@@ -261,6 +297,8 @@
             </div>
             <div class="bottombox_text">
               <h4>플라이 델타 앱 다운로드</h4>
+              <div class="line"></div>
+
               <p>
                 목적지에 도착하실 때 상쾌한 기분이 드실 수 있도록 고급 객실 중 한 곳에서 몸을 쭉 펴고 좋아하는 음식과
                 음료로 휴식을 취하고 다양한 무료 엔터테인먼트를 즐겨 보세요.
@@ -284,40 +322,48 @@
         <div class="footer_menu">
           <ul>
             <li class="first_menu">회사소개<i class="fa-solid fa-angle-down"></i></li>
-            <li><a href="#">회사소개</a></li>
-            <li><a href="#">채용정보</a></li>
-            <li><a href="#">뉴스허브</a></li>
-            <li><a href="#">투자자 관계(IR)</a></li>
-            <li><a href="#">출장여행</a></li>
-            <li><a href="#">여행사</a></li>
-            <li><a href="#">모바일앱</a></li>
+            <ul class="footer_dropdown">
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">채용정보</a></li>
+              <li><a href="#">뉴스허브</a></li>
+              <li><a href="#">투자자 관계(IR)</a></li>
+              <li><a href="#">출장여행</a></li>
+              <li><a href="#">여행사</a></li>
+              <li><a href="#">모바일앱</a></li>
+            </ul>
           </ul>
           <ul>
             <li class="first_menu">고객 서비스<i class="fa-solid fa-angle-down"></i></li>
-            <li><a href="#">도움말</a></li>
-            <li><a href="#">트위터로 문의</a></li>
-            <li><a href="#">의견/고객의 말씀</a></li>
+            <ul class="footer_dropdown">
+              <li><a href="#">도움말</a></li>
+              <li><a href="#">트위터로 문의</a></li>
+              <li><a href="#">의견/고객의 말씀</a></li>
+            </ul>
           </ul>
           <ul>
             <li class="first_menu">사이트 지원<i class="fa-solid fa-angle-down"></i></li>
-            <li><a href="#">로그인 도움</a></li>
-            <li><a href="#">사이트맵</a></li>
-            <li><a href="#">브라우저 호환성</a></li>
-            <li><a href="#">접근성</a></li>
-            <li><a href="#">예약 정보</a></li>
+            <ul class="footer_dropdown">
+              <li><a href="#">로그인 도움</a></li>
+              <li><a href="#">사이트맵</a></li>
+              <li><a href="#">브라우저 호환성</a></li>
+              <li><a href="#">접근성</a></li>
+              <li><a href="#">예약 정보</a></li>
+            </ul>
           </ul>
           <ul>
             <li class="first_menu">정책<i class="fa-solid fa-angle-down"></i></li>
-            <li><a href="#">고객 약속</a></li>
-            <li><a href="#">활주로 지체 대책</a></li>
-            <li><a href="#">법적 고지</a></li>
-            <li><a href="#">지속 가능성</a></li>
-            <li><a href="#">운송 계약</a></li>
-            <li><a href="#">쿠키/개인정보 보호정책/보안</a></li>
-            <li><a href="#">인신 매매 성명서</a></li>
-            <li><a href="#">항공기 등록</a></li>
-            <li><a href="#">손해 배상</a></li>
-            <li><a href="#">고객 서비스 및 비상 대책</a></li>
+            <ul class="footer_dropdown">
+              <li><a href="#">고객 약속</a></li>
+              <li><a href="#">활주로 지체 대책</a></li>
+              <li><a href="#">법적 고지</a></li>
+              <li><a href="#">지속 가능성</a></li>
+              <li><a href="#">운송 계약</a></li>
+              <li><a href="#">쿠키/개인정보 보호정책/보안</a></li>
+              <li><a href="#">인신 매매 성명서</a></li>
+              <li><a href="#">항공기 등록</a></li>
+              <li><a href="#">손해 배상</a></li>
+              <li><a href="#">고객 서비스 및 비상 대책</a></li>
+            </ul>
           </ul>
         </div>
         <ul class="delta_desc">
@@ -341,7 +387,13 @@
       </div>
     </footer>
     <!-- //footer -->
+
+    <!-- top button -->
+    <div class="top"><i class="fa-solid fa-circle-up"></i></div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- jQuary JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
@@ -353,6 +405,42 @@
         pagination: {
           el: ".swiper-pagination",
         },
+        autoplay: {
+          delay: 5000,
+        },
+      });
+
+      // 헤더 스크롤 -제이쿼리
+      $(window).scroll(function () {
+        let scrollTop = $(window).scrollTop();
+        if (scrollTop > 100) {
+          $("#header").addClass("active");
+        } else {
+          $("#header").removeClass("active");
+        }
+
+        if (scrooTop > 200) {
+          $(".top").addClass("show");
+        } else {
+          $(".top").removeClass("show");
+        }
+      });
+
+      // 모바일 메뉴 - 제이쿼리
+      // $("#mNav button").mouseenter(function () {
+      //   $("#mNav nav").addClass("dropdown");
+      // });
+      // $("#mNav button").mouseleave(function () {
+      // //   $("#mNav nav").removeClass("dropdown");
+      // // });
+
+      $("#mNav button").click(function () {
+        $("#mNav nav").toggleClass("dropdown");
+      });
+
+      // 푸터메뉴
+      $(".first_menu").click(function () {
+        $(this).next(".footer_dropdown").slideToggle();
       });
     </script>
   </body>

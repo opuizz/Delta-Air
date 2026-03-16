@@ -19,6 +19,9 @@
   }
 }
 @media (max-width: 970px) {
+  #mNav {
+    display: block;
+  }
   .nav {
     display: none;
   }
@@ -152,9 +155,6 @@
   .footer_menu ul {
     width: 100%;
   }
-  .footer_menu ul li {
-    display: none;
-  }
   .footer_menu ul li.first_menu {
     display: block;
     border-bottom: 1px solid #ddd;
@@ -163,7 +163,11 @@
     justify-content: space-between;
   }
   .footer_menu ul li.first_menu i {
-    display: inline-block;
+    display: block;
+    cursor: pointer;
+  }
+  .footer_menu ul.footer_dropdown {
+    display: none;
   }
   .delta_desc {
     margin-top: 20px;
@@ -200,5 +204,9 @@
   }
   .title {
     font-size: 24px;
+  }
+  i.fa-bed,
+  i.fa-car {
+    font-size: 20px;
   }
 }
